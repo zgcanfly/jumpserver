@@ -79,6 +79,7 @@
         <li id="command-execution-log"><a href="{% url 'audits:command-execution-log-list' %}">{% trans 'Batch command' %}</a></li>
     </ul>
 </li>
+
 {% if XPACK_PLUGINS %}
 <li id="xpack">
     <a>
@@ -101,6 +102,7 @@
     </ul>
 </li>
 {% endif %}
+
 {% if request.user.is_superuser %}
 <li id="settings">
     <a href="{% url 'settings:basic-setting' %}">
