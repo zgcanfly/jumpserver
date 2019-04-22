@@ -80,6 +80,16 @@
     </ul>
 </li>
 
+<li id="ops-tools">
+    <a>
+        <i class="fa fa-history" style="width: 14px"></i> <span class="nav-label">{% trans 'Ops-tools' %}</span><span class="fa arrow"></span>
+    </a>
+    <ul class="nav nav-second-level">
+        <li id="login-log"><a href="{% url 'ops-tools:tool1' %}">{% trans 'tool1' %}</a></li>
+
+    </ul>
+</li>
+
 {% if XPACK_PLUGINS %}
 <li id="xpack">
     <a>
@@ -110,6 +120,8 @@
     </a>
 </li>
 {% endif %}
+
+
 
 <script>
 $(document).ready(function () {
